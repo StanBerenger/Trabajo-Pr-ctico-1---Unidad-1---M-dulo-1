@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/npc(1).jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>No Pagamos Cooperativa</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-12 text-center">
+                <header class="pt-3 fixed-top">
+                    <div>
+                        <img src="./assets/img/npc.webp" alt="Logo de No pagamos cooperativa"> <h1 class="fs-2 mb-0 mt-1">No Pagamos Cooperativa S.A.</h1>
+                        <p class="fs-4">Seguros</p>
+                    </div>
+                    <div class="nav-bar d-flex justify-content-center mb-2">
+                            <button class="btn">
+                                Inicio
+                            </button>
+                            
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Consulta Asesor
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered ">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5 tituloConsultar" id="exampleModalLabel">Consulta a nuestro asesor</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                                        
+                                            <form class="row g-3 needs-validation formulario" novalidate>
+                                                <div class="col-md-4">
+                                                <label for="validationCustom01" class="form-label">Nombre</label>
+                                                <input type="text" class="form-control" id="validationCustom01" required>
+                                                <div class="valid-feedback">
+                                                    Bien!
+                                                </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                <label for="validationCustom02" class="form-label">Apellido</label>
+                                                <input type="text" class="form-control" id="validationCustom02"  required>
+                                                <div class="valid-feedback">
+                                                    Bien!
+                                                </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <label for="validationCustom03" class="form-label">DNI</label>
+                                                    <input type="number" class="form-control" id="validationCustom03" required>
+                                                    <div class="invalid-feedback">
+                                                        Por favor ingrese su DNI.
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <label for="validationCustomUsername" class="form-label">E-mail</label>
+                                                    <div class="input-group has-validation">
+                                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                                        <div class="invalid-feedback">
+                                                        Por favor ingrese un email válido.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <label for="validationCustom05" class="form-label">Teléfono</label>
+                                                    <input type="tel" class="form-control" id="validationCustom05" required>
+                                                    <div class="invalid-feedback">
+                                                        Por favor, ingrese su teléfono.
+                                                    </div>
+                                                </div>
+                                                
+
+                                                <div class="col-12 condicion">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                        <label class="form-check-label condiciones " for="invalidCheck">
+                                                            Aceptar términos y condiciones
+                                                        </label>
+                                                        <div class="invalid-feedback">
+                                                            Debes aceptar antes de enviar.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12 ">
+                                                    <button class="btn enviando" type="submit">Enviar</button>
+                                                </div>
+                                            </form>
+
+                                            <div class="contenedorBotones d-none">
+                                                <button class="btn" id="basico">Plan Básico</button>
+                                                <button class="btn" id="intermedio">Plan Intermedio</button>
+                                                <button class="btn" id="premium">Plan Premium</button>
+                                            </div>
+
+                                            <div id="contenedorPrecio" class="d-none">
+                                                <!-- Contenedor para mostrar el precio -->
+                                                <p class="precio"></p>
+                                            </div>
+                                            
+                                            
+                                            
+                                        </div>
+
+            
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn"  id="institucional">
+                                Institucional
+                            </button>
+                        
+                    </div>
+                </header>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-4 col-xl-4 col-xxl-4">
+                    <section id="section-institucional" class="d-none">
+                        <div id="card">
+                                <h2 class="text-center">Quienes somos</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quos similique quaerat sapiente alias ut recusandae, voluptate, voluptas eligendi eius sed accusantium minima totam corrupti laborum adipisci culpa, molestias iusto!
+                                Pariatur a officiis totam est recusandae atque. Animi facere deleniti voluptate nihil aspernatur dignissimos est recusandae laboriosam modi nostrum impedit nam ducimus reprehenderit quaerat reiciendis eligendi, corporis magnam harum voluptates.
+                                doloremque architecto qui nostrum modi at doloribus ipsa deserunt deleniti reiciendis, dicta enim. Numquam, iusto. Nemo impedit consequuntur necessitatibus voluptas harum aliquam!
+                                Nulla dicta nam, illo fugiat, eos molestiae possimus, veritatis sapiente neque quas iusto laboriosam iste recusandae! Tempora ut, quae laboriosam facilis cupiditate quam autem impedit officia accusantium labore commodi delectus?
+                                Nihil, dicta ad dolore, harum quibusdam ipsam esse consequuntur rem blanditiis recusandae quasi sapiente deleniti obcaecati corporis accusantium molestiae quam magni nostrum. Sunt autem assumenda recusandae doloremque perferendis animi illum.
+                                Voluptatem adipisci ab ipsum iste deleniti. Sequi quas odit aliquam vel dicta harum temporibus, fugit magnam illo voluptas sapiente eum repellat cumque soluta accusantium! Dolorem facere deserunt dolores veniam optio.</p>
+                        </div>
+                    </section>
+            </div>
+        </div>
+        
+    </div>
+    
+
+<script src="./script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

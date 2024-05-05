@@ -1,0 +1,43 @@
+header{
+    width: 100%;
+    font-family:'Playfair', Courier, monospace;
+    font-weight: 600;
+    color: #611656;
+    background-color: white;
+    
+}
+.modal {
+    z-index: 3000 ; /* O un valor mayor para que el fixed-top permita que el modal funcione */
+}
+
+
+.fixed-top {
+    z-index: 1500; /* Un valor menor que el z-index del modal */
+}
+
+
+h1{
+    font-weight: 600;
+    color: #611656;
+}
+.btn{
+    background-color: #390932;
+    color: white;
+}
+.condiciones{
+    position: relative;
+    margin-right: 25rem;
+}
+
+section{
+    padding-top: 17rem;
+}
+
+#contenedorPrecio{
+width: auto;
+height: auto;
+}
+
+
+
+
